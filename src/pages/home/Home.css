@@ -4,25 +4,34 @@
     cursor: pointer;
 }
 
-.lineBorder {
-    border-bottom: 2px solid #2B2B2B;
-}
-.body {
+.MainContainer {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    padding-top: 50px;
+    /* background: #000; */
 }
 
-.bodyContainer {}
+.MainContainerDark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background: #000;
+}
+
+.bodyContainer {
+}
 
 .title {
     font-size: 24px;
     font-weight: 600;
+    color: #5A6AF0;
 }
-
 
 
 /* Price, MCap, Circulating */
@@ -30,6 +39,7 @@
     display: flex;
     margin: 20px 0 20px 0;
 }
+
 .headerItems {
     width: 100%;
     margin-right: 50px;
@@ -41,7 +51,10 @@
 
 .headerItem {
     margin-right: 10px;
-    background: #2A2A2A;
+    /* background: #2A2A2A; */
+    background: #5A6AF0;
+    background: #A3B7A7;
+    color: #fff;
     font-size: 12px;
     padding: 3px 10px 3px 10px;
     border-radius: 7px;
@@ -51,6 +64,13 @@
     font-size: 40px;
     letter-spacing: 1px;
     font-weight: 400;
+}
+
+.headerItem2Dark {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -66,12 +86,29 @@
 .boxContainer {
     margin: 20px 0 20px 0;
     padding: 20px;
+    /* background: #2A2A2A; */
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.boxContainerDark {
+    margin: 20px 0 20px 0;
+    padding: 20px;
     background: #2A2A2A;
     border-radius: 10px;
     border: 1px solid gray;
 }
 
 .boxContainerItem1 {
+    background: #fff;
+    font-weight: 600;
+    font-style: italic;
+    color: #A3B7A7;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.boxContainerItem1Dark {
     background: #2A2A2A;
     font-weight: 600;
     font-style: italic;
@@ -81,15 +118,20 @@
 }
 
 .boxContainerItem2 {
+    background: #fff;
+    font-size: 25px;
+}
+
+.boxContainerItem2Dark {
     background: #2A2A2A;
     font-size: 25px;
+    color: #fff;
 }
 
 
 /* Bottom */
 .bottomContainer {
     display: flex;
-    margin-bottom: 150px;
 }
 
 .bottomContainerItems {
@@ -99,7 +141,8 @@
 .bottomContainerItem1 {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, #FF719D, #f5af19);
+    /* background: linear-gradient(to right, #FF719D, #f5af19); */
+    background: linear-gradient(to right, rgb(206, 203, 203), #5A6AF0);
     padding: 30px 0px 30px 0px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -108,13 +151,14 @@
 }
 
 .bottomContainerItem1:hover {
-    background: linear-gradient(to right, #f5af19, #FF719D);
+    /* background: linear-gradient(to right, #f5af19, #FF719D); */
+    background: linear-gradient(to right, #5A6AF0, rgb(206, 203, 203));
 }
 
 .bottomContainerItem2 {
     display: flex;
     justify-content: center;
-    background: #f5af19;
+    background: #5A6AF0;
     padding: 30px 0px 30px 0px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -124,4 +168,5 @@
 
 .bottomContainerItem2:hover {
     background: linear-gradient(to right, #f59d19, #FF719D);
+    background: linear-gradient(to right, #5A6AF0, rgb(206, 203, 203));
 }

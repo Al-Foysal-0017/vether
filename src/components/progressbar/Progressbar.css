@@ -1,9 +1,11 @@
 .progressbar {
     margin: 7px 0px 40px 0px;
-    background: #E66B7B;
+    /* background: #E66B7B; */
+    background: #5A6BF0;
     height: 27px;
     width: 150px;
     border-radius: 15px;
+    border: 1px solid #5A6BF0;
 }
 
 .progressbarContainer {
@@ -12,13 +14,16 @@
 }
 
 .progressbarXYZ {
-    background: #2A2A2A;
+    /* background: #2A2A2A; */
+    background: rgb(228, 226, 226);
     border-radius: 15px;
 }
 
 .progressbarItem {
     margin-right: 10px;
-    background: #2A2A2A;
+    /* background: #2A2A2A; */
+    background: #A3B7A7;
+    color: #fff;
     font-size: 12px;
     padding: 3px 10px 3px 10px;
     border-radius: 7px;
@@ -36,7 +41,7 @@
     background-image: linear-gradient(
             45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem;
-    background-color: var(--chakra-colors-vether-200);
+    /*background-color: var(--chakra-colors-vether-200);*/
     border-radius: 13px;
     animation: 1s linear 0s infinite normal none running progress;
 }
